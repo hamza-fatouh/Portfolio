@@ -705,16 +705,15 @@ hr {
 
 .navbar {
   background-color: transparent;
-  padding: 23px 50px
+  padding: 23px;
+  padding-right: 30px;
 }
 
-.navbar .navbar-brand span {
-  color: #f3f3f3;
-  text-transform: uppercase
-}
-
-.navbar .navbar-brand img {
-  width: 110px
+.navbar-brand .brand{
+  padding-left: 5px;
+  font-size: 28px !important;
+  font-weight: bold !important;
+  font-style: italic ;
 }
 
 .navbar .navbar-brand svg {
@@ -722,7 +721,7 @@ hr {
 }
 
 .navbar .navbar-brand svg #logo-text {
-  fill: #e6e6e6
+  fill: #e6e6e6 
 }
 
 .navbar .navbar-menu {
@@ -919,6 +918,7 @@ hr {
 
 .home-area .home-headline .single-headline b.is-visible {
   opacity: 1;
+  color: #dc3545;
   position: relative
 }
 
@@ -934,7 +934,7 @@ hr {
 
 @media (max-width:767.98px) {
   .home-area .fixed-wrapper {
-    display: none
+    margin-right: 15px;
   }
 }
 
@@ -1144,6 +1144,7 @@ hr {
 .services-section .single-service {
   background-color: #161616;
   border-bottom: 2px solid transparent;
+  height: 360px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, .2);
   margin-bottom: 30px;
   padding: 38px 42px;
@@ -1523,11 +1524,12 @@ hr {
   background-color: #222;
   border: none;
   color: white;
-  margin: 10% auto;
+  margin: 40% auto;
   padding: 20px;
   border-radius: 10px;
   width: 80%;
-  max-width: 600px;
+  max-width: 800px;
+  height: max-content;
   z-index: 10;
 }
 
@@ -1550,7 +1552,7 @@ hr {
 
 .carousel-img {
   width: 100%;
-  height: 40%;
+  height: 60%;
   max-height: 300px;
   border-radius: 10px;
 }
@@ -1581,6 +1583,10 @@ hr {
   margin-top: 10px;
 }
 
+#popup-title {
+  color: #dc3545;
+  font-weight: bold;
+}
 
 .portfolio-item {
   border: none;
