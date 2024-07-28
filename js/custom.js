@@ -18,13 +18,18 @@ function sendEmail(event) {
 var images = [];
 var currentImageIndex = 0;
 
-function showPopup(title, description, ...imgUrl) {
+function showPopup(title, description, link, ...imgUrl) {
     images = []
     images = imgUrl;
     let src =images[currentImageIndex]
     currentImageIndex = 0;
     document.getElementById('popup').style.display = 'block';
     document.getElementById('popup-title').innerText = title;
+    document.getElementById('opt-link').href = link 
+    if (link !== "none")  
+        document.getElementById('opt-link').style.display = 'block';
+    else
+        document.getElementById('opt-link').style.display = 'none';
     document.getElementById('popup-description').innerText = description;
     document.getElementById('carousel-img').src = src;
 }
@@ -42,4 +47,3 @@ function prevImage() {
     currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
     document.getElementById('carousel-img').src = images[currentImageIndex];
 }
-
