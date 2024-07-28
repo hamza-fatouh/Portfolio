@@ -23,7 +23,7 @@ function showPopup(title, description, link, ...imgUrl) {
     images = imgUrl;
     let src =images[currentImageIndex]
     currentImageIndex = 0;
-    document.getElementById('popup').style.display = 'block';
+    document.getElementById('popup').style.display = 'flex';
     document.getElementById('popup-title').innerText = title;
     document.getElementById('opt-link').href = link 
     if (link !== "none")  
